@@ -25,10 +25,12 @@ body,
     text-align: justify;
     font-size: 1.4rem;
     color: #00000080;
+    font-weight: 400;
 }
 .title{
     font-size: 3.125rem;
     font-weight: bold;
+    padding: 16px 0;
 }
 
 .center{
@@ -98,8 +100,54 @@ img{
     flex-basis: 50%;
 }
 
+
+/* plants section */
+.plants{
+    margin-top: 60px;
+}
+.plants_info{
+    padding: 15px 0;
+}
+.plants_des{
+    margin-bottom: 40px;
+}
+.flower_name{
+    font-family: "Inter", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #111111;
+    padding: 10px 0;
+
+}
+.price{
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 1.4rem;
+    padding: 20px 0;
+}
+.btn{
+    color: #fff;
+    background-color: #E95A08;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 25px 0;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 10px 0;
+    border: none;
+}
+.plant_buttom{
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 20px;
+}
+
 /* Small devices lay out */
 @media screen and (max-width: 576px) {
+    .title{
+        font-size: 1.5rem;
+    }
+    
     .nav_bar ul{
         display: none;
     }
@@ -111,7 +159,19 @@ img{
     }
     .despription{
         font-size: 0.875rem;
-        text-align: justify;
+    }
+
+    
+    .plant_buttom{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .price,
+    .flower_name{
+        font-size: 1rem;
+    }
+    .btn{
+        font-size: 1rem;
+        padding: 18px 0;
     }
 }
 
