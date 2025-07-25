@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-.header
+.header,
 .main{
     width: 90%;
     margin: 0 auto;
@@ -233,6 +233,8 @@ img{
 
 /* Join Section style */
 .join{
+    width: 110%;
+    margin-left: -5%;
     align-items: center;
     margin-top: 120px;
     background-image: url(../assets/news-letter-bg.png);
@@ -240,6 +242,7 @@ img{
     background-size: cover;
     min-height: 500px;
 }
+
 .join_container{
     text-align: center;
     width: 100%;
@@ -302,10 +305,6 @@ img{
 @media screen and (max-width: 576px) {
     .nav_bar{
         width: 100%;
-    }
-    .join{
-        width: 110%;
-        margin-left: -5%;
     }
     .banner_info,
     .main{
@@ -391,7 +390,7 @@ img{
     .banner_info{
         padding-top: 30px;
     }
-    .banner_info,
+    .header,
     .main{
         width: 90%;
         margin: 0 auto;
