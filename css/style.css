@@ -20,12 +20,20 @@ body,
 .color{
     color: #E95A08;
 }
-.despription{
+#gray1,
+#gray2{
+    color: #8987A1;
+}
+.white{
+    color: #ffffff;
+}
+.description{
     font-family: "Inter", sans-serif;
     text-align: justify;
     font-size: 1.4rem;
     color: #00000080;
     font-weight: 400;
+    padding: 15px 0;
 }
 .title{
     font-size: 3.125rem;
@@ -142,6 +150,65 @@ img{
     gap: 30px 20px;
 }
 
+/* Latest Deals section style */
+.deals_fig_container{
+    grid-template-columns: 1fr 2fr;
+    gap: 0 30px;
+}
+.fig_left .fig1{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../assets/deal-bloom.png);
+    background-size: cover;
+    margin-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px; 
+    height: 200px;
+}
+
+.fig_left .fig2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../assets/deal-ana.png);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    height: 200px;
+}
+.fig_right{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(../assets/deal-zabo.png);
+    border-radius: 15px;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 425px;
+}
+.fig1 p, 
+.fig2 p{
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: "Noto Serif", serif;
+    color: #fff;
+}
+.fig1 a,
+.fig2 a{
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    padding: 15px 0;
+}
+.fig_right p{
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+.fig_right a{
+    font-size: 1.75rem;
+    color: #fff;
+    font-weight: 600;
+    padding: 15px 0;
+}
+
+
 /* flower_lover Section style */
 .flower_lover{
     margin: 150px 0 120px;
@@ -151,7 +218,6 @@ img{
 .flower_lover ul li{
     margin: 10px 0 10px 25px;
 }
-
 /* Small devices lay out */
 @media screen and (max-width: 576px) {
     .title{
@@ -167,7 +233,7 @@ img{
     .banner_title{
         font-size: 1.5rem;
     }
-    .despription{
+    .description{
         font-size: 0.875rem;
     }
 
@@ -188,5 +254,29 @@ img{
     .flower_lover{
         grid-template-columns: repeat(1, 1fr); 
     }
+
+    
+    /* Latest Deals section style */
+    .deals_fig_container{
+        grid-template-columns: 1fr;
+    }
+    .fig_left .fig1,
+    .fig_left .fig2,
+    .fig_right {
+        height: 350px;
+    }
+    .fig_right{
+        margin-top: 30px;
+    }
+    .fig_left p,
+    .fig_right p{
+        font-size: 1.25rem;
+    }
+    .fig_left a,
+    .fig_right a{
+        font-size: 1rem;
+    padding: 15px 0;
+    }
+    
 }
 
