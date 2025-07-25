@@ -1,12 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
 
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body,
+.header
 .main{
     width: 90%;
     margin: 0 auto;
@@ -29,7 +28,8 @@ body,
 }
 .description{
     font-family: "Inter", sans-serif;
-    text-align: justify;
+    text-align: left;
+    width: 90%;
     font-size: 1.4rem;
     color: #00000080;
     font-weight: 400;
@@ -87,6 +87,7 @@ img{
     background: transparent;
     border: none;
     flex-basis: 120px;
+    cursor: pointer;
 
 
 }
@@ -279,9 +280,6 @@ img{
     margin: 8px 0;
     padding: 8px 0;
 }
-.padding{
-    padding-right: 50px;
-}
 .foot_link ul li a,
 .foot_feature_link ul li a{
     color: #6B7280;
@@ -302,10 +300,25 @@ img{
 
 /* Small devices lay out */
 @media screen and (max-width: 576px) {
+    .nav_bar{
+        width: 100%;
+    }
+    .join{
+        width: 110%;
+        margin-left: -5%;
+    }
+    .banner_info,
+    .main{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .banner_fig{
+        width: 100%;
+    }
     .title{
         font-size: 1.5rem;
+        padding: 0;
     }
-    
     .nav_bar ul{
         display: none;
     }
@@ -317,9 +330,7 @@ img{
     }
     .description{
         font-size: 0.875rem;
-    }
-
-    
+    }    
     .plant_buttom{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -331,13 +342,10 @@ img{
         font-size: 1rem;
         padding: 18px 0;
     }
-
-    
     .flower_lover{
+        margin-top: 40px;
         grid-template-columns: repeat(1, 1fr); 
-    }
-
-    
+    }    
     /* Latest Deals section style */
     .deals_fig_container{
         grid-template-columns: 1fr;
@@ -363,12 +371,89 @@ img{
     /* footer section responsive */
     .footer{
         grid-template-columns: 1fr;
+        gap: 00px 0;
+        padding: 10px;
     }
     .social_link ul{
         justify-content: left;
+    }
+    .foot_logo p{
+        padding: 10px;
+        text-align: left;
+        width: 100%;
     }
     .trusted{
         display: none;
     }
 }
 
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .banner_info{
+        padding-top: 30px;
+    }
+    .banner_info,
+    .main{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .banner_fig{
+        width: 100%;
+    }
+    .title, 
+    .banner_title{
+        font-size: 2.5rem;
+        padding: 0;
+    }
+    .banner{
+        flex-direction: column-reverse;
+    }
+    .description{
+        font-size: 0.875rem;
+    }    
+    .plant_buttom{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .price,
+    .flower_name{
+        font-size: 1rem;
+    }
+    .btn{
+        font-size: 1rem;
+        padding: 18px 0;
+    }
+    .flower_lover{
+        margin-top: 40px;
+        grid-template-columns: repeat(1, 1fr); 
+    }    
+    /* Latest Deals section style */
+    .deals_fig_container{
+        grid-template-columns: 2fr 3fr;
+    }
+    .fig_left p,
+    .fig_right p{
+        font-size: 2rem;
+    }
+    .fig_left a,
+    .fig_right a{
+        font-size: 1.5rem;
+    padding: 15px 0;
+    }
+
+    /* footer section responsive */
+    .footer{
+        grid-template-columns: 2fr repeat(2, 1fr);
+        gap: 00px 0;
+        padding: 10px;
+    }
+    .social_link ul{
+        justify-content: left;
+    }
+    .foot_logo p{
+        padding: 10px;
+        text-align: left;
+        width: 100%;
+    }
+    .trusted{
+        display: none;
+    }
+}
