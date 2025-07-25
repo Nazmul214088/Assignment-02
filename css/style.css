@@ -211,13 +211,25 @@ img{
 
 /* flower_lover Section style */
 .flower_lover{
-    margin: 150px 0 120px;
-    grid-template-columns: repeat(2, 1fr);  
+    margin: 150px 0 120px; 
+    grid-template-columns: repeat(2, 1fr);
     gap: 50px; 
 }
 .flower_lover ul li{
     margin: 10px 0 10px 25px;
 }
+
+.figture{
+    position: relative;
+}
+.trusted{
+    position: absolute;
+    top: -120px;
+    right: -90px;
+    height: 280px;
+    width: 280px;
+}
+
 /* Join Section style */
 .join{
     align-items: center;
@@ -347,13 +359,16 @@ img{
         font-size: 1rem;
     padding: 15px 0;
     }
-    
+
     /* footer section responsive */
     .footer{
         grid-template-columns: 1fr;
     }
     .social_link ul{
         justify-content: left;
+    }
+    .trusted{
+        display: none;
     }
 }
 
