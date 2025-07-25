@@ -218,6 +218,37 @@ img{
 .flower_lover ul li{
     margin: 10px 0 10px 25px;
 }
+/* Join Section style */
+.join{
+    align-items: center;
+    margin-top: 120px;
+    background-image: url(../assets/news-letter-bg.png);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+.join_container{
+    text-align: center;
+    width: 100%;
+}
+.join input[type = "email"]{
+    padding: 15px 20px;
+    width: 55%;
+    border: none;
+    font-size: 1rem;
+}
+.btn_subscribe{
+    background-color: #E95A08;
+    color: #fff;
+    padding: 15px 10px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: -4px;
+    width: 20%;
+}
+
+
 /* Small devices lay out */
 @media screen and (max-width: 576px) {
     .title{
